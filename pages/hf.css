@@ -1,0 +1,83 @@
+/* Sison, Franchesca Zyreen    |    WD-303 */ 
+/* This CSS file is the styles for the header and the footer*/
+
+
+/* Base Resets & Layout Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Centered Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a88963; /* Warm coffee brown */
+    padding: 16px 40px;
+    width: 100%;
+}
+
+header .name {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex: 1; /* Left anchor */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex: 2; /* Centered anchor */
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+ul.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: opacity 0.2s ease;
+}
+
+ul.menu li a:hover {
+    opacity: 0.8;
+}
+
+.navicon {
+    display: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header-spacer {
+    flex: 1; /* Right anchor balancing the layout */
+}
+
+/* Footer Section */
+footer {
+    background-color: #a88963;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.85rem;
+    margin-top: auto;
+}

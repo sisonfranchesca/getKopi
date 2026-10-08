@@ -1,0 +1,86 @@
+.intro, .products {
+    box-sizing: border-box;
+}
+
+/* Page Intro Section */
+.intro {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.intro h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #3d2612;
+    margin: 0 0 8px 0;
+}
+
+.intro h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #6e5846;
+    margin: 0;
+}
+
+/* Products Layout (Centered Grid) */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 20px auto 60px;
+    padding: 0 20px;
+}
+
+/* Individual Menu Item Card */
+.item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    
+    /* Light border outline */
+    border: 1px solid rgba(210, 180, 140, 0.4);
+    
+    /* Soft blurred warm card shadow */
+    box-shadow: 0 4px 14px rgba(180, 130, 90, 0.15),
+                0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.item h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3d2612;
+}
+
+.item p {
+    margin: 0 0 6px 0;
+    font-size: 0.92rem;
+    color: #5a483a;
+    line-height: 1.4;
+}
+
+/* Price Formatting */
+.item p:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #4a3525;
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
